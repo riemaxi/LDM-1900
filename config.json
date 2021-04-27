@@ -1,0 +1,28 @@
+{
+	"host" : "http://localhost",
+	"port" : 30000,
+	"greeting" : "LDM-1900 on _PORT_ ... _DATE_ ...",
+
+	"comm" : {
+		"port" : 31000,
+		"greeting" : "LDM-1900 channel on _PORT_ ... _DATE_ ..."
+	},
+
+	"view" : {
+			"app" : {
+				"path": "./view/js/app.js",
+				"config" : {
+					"channel" : "ws://localhost:31000",
+					"access" : {
+						"session" : "admin"
+					}
+				}
+			},
+			"style" : "./view/css/style.css",
+			"favicon" : "./view/img/favicon.png",
+			"title" : "LDM-1900",
+			"description" : "LDM-1900 console",
+			"language" : "en-us",
+			"template" : "./view/index.html"
+		}
+}
